@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body {
+            margin: 0;
+            height: 200vh;
+        }
+
+        .wrapper {
+            border: 5px solid black;
+            width: 620px;
+            height: 540px;
+            font-size: 30px;
+            /*relative yazdığım kısım kasayıcı sayılır eğer yazmasaydım body i kapsayıcı oalrakbelirlerdi*/
+            position: relative;
+            margin-top: 90px;
+            /*sticky kodu div imizin scrolla beraber aşağı inmelisi sağlar ama altına top:x yazmamız lazım yoksa çalışmaz*/
+            /*position: sticky;
+            top: 67px;*/
+            
+        }
+
+        .box {
+            height: 150px;
+            width: 200px;
+            color: white;
+
+        }
+
+        .box1 {
+            background-color: turquoise;
+            color: black;
+            /*z-index yapısı yazdığım div iön plana çıkartır*/
+            z-index: 1;
+            position: relative;
+        }
+
+        .box2 {
+            background-color: blueviolet;
+            /*position absolue divi ekranda istediğim bölgeye taşımamı sağlar*/
+            right: 0px;
+            bottom: 10px;
+            position: absolute;
+        }
+
+        .box3 {
+            background-color: cadetblue;
+
+        }
+
+        header {
+
+            background-color: coral;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: 4;
+            height: 67px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+        }
+        img{
+            margin-top: 1.10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="https://i.pinimg.com/236x/f7/fd/a6/f7fda65a3cae82c8897ef3128fcfeced.jpg"  height="65px" width="50px" alt="resim">
+            <div class="link">
+                <a href="link1" target="_blank">link1</a>
+                <a href="link2" target="_blank">link2</a>
+                <a href="link3" target="_blank">link3</a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2 <p style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus esse amet in eligendi sit autem maiores corrupti doloremque illum, iusto asperiores et
+                quos, ipsa nam enim repellat quam molestias officia?</p>
+        </div>
+        <div class="box box3">box3</div>
+    </div>
+</body>
+
+</html>

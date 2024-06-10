@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGALERİ</title>
+    <style>
+        body {
+            height: 200vh;
+            margin: 0px;
+            background-image: url();
+            background-color: white;
+            background-color: rgb(189, 255, 235);
+            /* Görsel Çalışmassa Arkaplan Rengi */
+            background-position: center;
+            /* Görseli Ortala */
+            background-repeat: no-repeat;
+            /* Resmi tekrarlama */
+            background-size: cover;
+            /* resmi ekranı kaplayacak hale getir. */
+        }
+
+        header {
+            background-color: gray;
+            height: 60px;
+            row-gap: 50px;
+            column-gap: 20px;
+            position: relative;
+            position: sticky;
+            top: 0px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+            position: relative;
+            z-index: 6;
+        }
+
+        .üst {
+            padding: 18px 5px;
+            color: black;
+            text-decoration: none;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+
+        .üst:hover {
+            color: whitesmoke;
+            display: inline-block;
+            transition: 0.5s;
+        }
+
+        .image {
+            height: 60px;
+            width: 60px;
+            padding: 0px 20px;
+        }
+
+        .foto {
+            transition: 2s;
+            display: grid;
+            /*border: 2px solid black;*/
+            width: 200px;
+            height: 500px;
+            margin-top: 100px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        .foto:hover {
+            padding: 30px 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img class="image" src="https://i.pinimg.com/236x/ce/a2/3e/cea23e08e8b2a10ee6e8f21b9fce3aaa.jpg"
+                    alt="LOGO">
+            </div>
+            <a class="üst" href="link1">HAKKIMIZDA</a>
+            <a class="üst" href=link2">İLETİŞİM</a>
+            <a class="üst" href=link3">GİRİŞ YAP</a>
+            <a class="üst" href=link4">ÜYE OL</a>
+        </nav>
+    </header>
+    <div class="foto">
+        <h1 style="text-align: right;">SEDAN ARAÇLARIMIZ</h1>
+        <a href="link"><img src="https://i.pinimg.com/564x/9a/82/71/9a8271f7439c169c107eb65d2a14a751.jpg" alt="sedan"
+                style="margin-top: 0px;"></a>
+
+    </div>
+</body>
+
+</html>

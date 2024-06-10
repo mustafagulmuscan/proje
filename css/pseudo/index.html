@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* basıldığında ne olması gerektiğini ayarlar*/
+        a:active {
+            color: red;
+            background-color: black;
+        }
+
+        a:link {
+            background-color: rgb(0, 255, 94);
+        }
+
+        /*Select and style unvisited links:*/
+        a:visited {
+            color: turquoise;
+        }
+
+        /*Set the height and width for all checked <input> elements:*/
+        input:checked {
+            height: 50px;
+            width: 50px;
+        }
+
+        /*Set a background color for all disabled input elements of type="text":*/
+        input[type=text]:enabled {
+            background: #ffff00;
+        }
+
+        input[type=text]:disabled {
+            background: #dddddd;
+        }
+
+        a:active {
+            color: palevioletred;
+        }
+
+        a:hover {
+            color: #ff0000;
+            font-size: 22px;
+        }
+
+        /*aşağıda yazdığım kod mause i linklere getirdiğimde paragrafın görünmesini geri çektiğimde kaybolmasını sağlıyor*/
+        p {
+            display: none;
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        div:hover p {
+            display: block;
+        }
+
+        /*first-child kodu ilk paragrafı seçtirir*/
+        p:first-child {
+            color: rgb(205, 50, 50);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="adana">
+        <a href="kütahya.html">kütahya</a>
+        <a href="eskişehir.html">eskişehir</a>
+        <a href="ankara.html">ankara</a>
+        <a href="yozgat.html">yozgat</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, id. Quibusdam possimus minima dolorem magni
+            explicabo, laboriosam reprehenderit beatae dolores omnis esse quas laudantium quam! Possimus magni
+            dignissimos beatae incidunt.</p>
+    </div>
+    <div><input type="text"></div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit error modi nemo, asperiores
+            necessitatibus repellendus sapiente iusto, officia animi numquam quisquam sunt incidunt provident commodi
+            rerum laboriosam distinctio tempore!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam impedit laboriosam deleniti? Illo accusamus
+            voluptatibus corporis quasi excepturi reprehenderit soluta repellat, illum pariatur ad enim quisquam
+            praesentium debitis incidunt possimus.</p>
+    </div>
+</body>
+
+</html>

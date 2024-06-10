@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Specify a background color for the first <p> element of its parent:*/
+        p:first-of-type {
+            background: red;
+        }
+
+        /*Select and style an input field when it gets focus:*/
+        input:focus {
+            background-color: yellow;
+        }
+
+        /*Select and style only if the value of the <input> element is invalid:*/
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        /*Select and style only if the value of the <input> element is "in range":*/
+        input:in-range {
+            border: 2px solid yellow;
+        }
+
+        /*Select and style every <p> element with a lang attribute value equal to "it" (Italian):*/
+        p:lang(it) {
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil autem sunt ducimus hic enim tempore quod,
+            provident optio sed eos facilis ipsa neque quibusdam. Fugiat magni sunt ut maxime reprehenderit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, culpa eius. Dignissimos neque obcaecati est
+            nisi minima eligendi accusantium eveniet, assumenda quidem ipsam consequuntur nihil vitae sapiente ad omnis
+            molestias.</p>
+    </div>
+    <form>
+        First name: <input type="text" name="firstname"><br>
+        Last name: <input type="text" name="lastname">
+    </form>
+    <input type="number" min="5" max="100" value="7">
+    <p lang="it">Ciao bella!</p>
+</body>
+
+</html>

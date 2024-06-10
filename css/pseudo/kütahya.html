@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*first-child kodu ilk paragrafı seçtirir*/
+        p:first-child {
+            color: rgb(205, 50, 50);
+        }
+
+        /*Specify a background color for the <p> element that is the last child of its parent:*/
+        p:last-child {
+            background: #ae00ff;
+        }
+
+        /* aşağıda yazdığım bu yapı cümlenin başına ve sonuna işaret yerleştirmemizi sağlar*/
+        q:lang(no) {
+            quotes: "(" ")";
+            font-size: 40px;
+        }
+
+        /*Specify a background color for the last <p> element of its parent:*/
+        p:last-of-type {
+            background: #ff0000;
+        }
+
+        /*Specify a background color for empty <p> elements:*/
+        p:empty {
+            width: 100px;
+            height: 20px;
+            background: #ff0000;
+        }
+
+        p:first-of-type {
+            background: red;
+        }
+/*Set a background color for all elements that are not a <p> element*/
+        :not(p) {
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>merhaba dünya</h1>
+        <p></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis reprehenderit error modi nemo, asperiores
+            necessitatibus repellendus sapiente iusto, officia animi numquam quisquam sunt incidunt provident commodi
+            rerum laboriosam distinctio tempore!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur <q lang="no">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Earum aut animi minima, ratione voluptatem tempore consequuntur, odit tempora possimus, modi beatae
+                minus dolore accusantium ut consequatur eos iure perspiciatis dolorem.</q>adipisicing elit. Veniam
+            impedit laboriosam deleniti? Illo accusamus voluptatibus corporis quasi excepturi reprehenderit soluta
+            repellat, illum pariatur ad enim quisquam praesentium debitis incidunt possimus.</p>
+        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam reprehenderit, libero commodi nulla
+            accusamus, eum vitae dolor ex officiis blanditiis dolorum, eius eos totam. Praesentium illo ducimus soluta
+            omnis autem.</P>
+    </div>
+</body>
+
+</html>

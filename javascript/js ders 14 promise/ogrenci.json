@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "isim": "Mustafa",
+        "soyad": "Gülmüşcan",
+        "yas": "20",
+        "memleket": "kütahya",
+        "okul": "Hacettepe"
+    },
+    {
+        "id":2,
+        "isim": "ALi",
+        "soyad": "Ateş",
+        "yas": "38",
+        "memleket": "Uşak",
+        "okul": "Gazi"
+    },
+    {
+        "id":3,
+        "isim": "Ahmet",
+        "soyad": "Bayram",
+        "yas": "23",
+        "memleket": "Yalova",
+        "okul": "Odtü"
+    }
+]

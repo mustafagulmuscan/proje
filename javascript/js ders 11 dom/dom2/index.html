@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- /*telwind css cdn*/ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="text-5xl my-10 text-center">Todo List</h1>
+    <div class="container mx-auto w-1/2">
+        <form>
+            <div class="border flex">
+                <input type="text" placeholder="Bir Şeyler Yaz" class="w-full p-3 relative z-90" id="todos-input">
+                <button type="submit" class="border-1 px-6 bg-green-500 text-white" id="add-Todo">ADD</button>
+
+            </div>
+        </form>
+        <div class="flex justify-end my-5">
+            <button class="p-3 bg-red-500 text-white" id="clear">CLEAR</button>
+        </div>
+        <ul class="border p-6 flex flex-col gap-y-4" id="Todos">
+            <!-- <li class="flex justify-between border px-4 py-3 flex items-center justify-between">
+                <span>Todo Name</span>
+                <button class="text-red-400">DELETE</button>
+            </li> -->
+        </ul>
+    </div>
+    <script>
+        const textInputDOM = document.getElementById("todos-input");
+        const addTodoDOM = document.getElementById("add-Todo");
+        const TodosDOM = document.getElementById("Todos");
+        const clearTodos=document.getElementById("clear");
+
+        let TextInputValue = "";
+        let Todos = [];
+
+        textInputDOM.addEventListener("change", function (event) {
+            TextInputValue = event.target.value;
+            console.log(TextInputValue);
+        })
+        addTodoDOM.addEventListener("click", addTodo)
+        clearTodos.addEventListener("click",cleartodos)
+        function addTodo(e) {
+            e.preventDefault();
+            Todos.unshift({ id: Todos.length + 1, todotitle: TextInputValue });
+            // document.getElementById("todos-input").value="";
+            textInputDOM.value = "";/*yandaki ve yukarıda açıklama içine aldığım kod aynı işlevi görür ve bunların işlevi inputa bir şey yazıp enterlediğimde inputun içini boşaltır*/
+            displaytodos();
+        }
+        function displaytodos() {
+            let result = "";
+
+            if (Todos.length === 0) {
+                TodosDOM.innerHTML = "List is empty!";
+            }
+            else {
+                Todos.forEach((item) => {
+                    result += `<li class="flex justify-between border px-4 py-3 flex items-center justify-between">
+                    <span>${item.todotitle}</span>
+                    <button class="text-red-400" onclick="deleteTodo(${item.id})">DELETE</button>
+                </li>`;
+                });
+                TodosDOM.innerHTML = result;
+            }
+        }
+        function deleteTodo(id) {
+            let deletedid;
+            for (let index in Todos){
+                if(Todos[index].id==id){
+                    deletedid=index;
+                }
+            }
+            Todos.splice(deletedid,1);
+            displaytodos();
+        }
+        function cleartodos(){
+            Todos.splice(0,Todos.length);
+            displaytodos();
+        }
+        displaytodos();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-1: #e0ffcd;
+    --color-2: #fdffcd;
+    --color-3: #ffebbb;
+    --color-4: #ffcab0;
+    --color-5: #000;
+    --color-6: #ffffff;
+    --color-7: #ff0000;
+}
+
+.bigwrapper {
+    background-color: var(--color-3);
+    height: 170vh;
+}
+
+.wrapper {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: var(--color-1);
+    height: 100px;
+}
+
+.headerleft {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin-left: 40px;
+}
+
+.menu button {
+    font-size: xx-large;
+    border: none;
+    background-color: var(--color-1);
+    cursor: pointer;
+}
+
+.headerleft .logo {
+    font-size: 30px;
+    color: var(--color-5);
+    cursor: pointer;
+}
+
+.headercenter .headersearch {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.headercenter .headersearch input {
+    width: 350px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.headercenter .headersearch .bi-search {
+    font-size: x-large;
+    cursor: pointer;
+    color: var(--color-5);
+}
+
+.headerright {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    column-gap: 30px;
+    font-size: 20px;
+}
+
+.headerright .link a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color-5);
+}
+
+.headerright .link a:hover {
+    background-color: var(--color-6);
+    border-radius: 10px;
+}
+
+.headerright .basket a {
+    font-size: 33px;
+    cursor: pointer;
+    color: var(--color-5);
+    text-decoration: none;
+}
+
+.headerright .basket .sayac {
+    font-size: small;
+    width: 5px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-7);
+    border-radius: 10px;
+    /*border: 1px solid var(--color-7);*/
+    color: var(--color-6);
+    position: absolute;
+    margin-left: 22px;
+    padding: 3px;
+    margin-top: -5px;
+}
+
+/*HEADER END*/
+/*ASIDE BAŞLANGIÇ*/
+.sidemenu {
+    border: none;
+    width: 220px;
+    height: 400px;
+    margin-top: 120px;
+    margin-left: 40px;
+    background-color: var(--color-2);
+    position: relative;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kategori {
+    position: absolute;
+    background-color: var(--color-4);
+    margin-top: -15px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.turler {
+    margin-top: 30px;
+}
+
+.turler li {
+    padding: 3px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.turler li a {
+    text-decoration: none;
+    color: var(--color-5);
+}
+
+/*aside son*/
+/*section başlangıç*/
+.anabolum {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 300px;
+    height: 900px;
+    width: 1180px;
+    background-color: var(--color-4);
+}
+
+.kitaplar {
+    margin-top: 30px;
+    margin-left: 130px;
+    list-style: none;
+    row-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.kitaplar li a {
+    text-decoration: none;
+    color: var(--color-5);
+}
+
+.kitaplar li a img {
+    height: 150px;
+}
+
+/*section son*/
+/*index son*/
+/*login başlangıç*/
+.bodylogin {
+    background-color: var(--color-4);
+    position: relative;
+}
+
+.wrapper-login {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kayit {
+    height: 450px;
+    width: 400px;
+    background-color: var(--color-1);
+    border-radius: 4px;
+}
+
+.kayit h2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 25px;
+    background-color: var(--color-3);
+}
+
+.id {
+    display: grid;
+    margin-top: 50px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.id input {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: var(--color-2);
+    text-justify: 13px;
+}
+
+::-webkit-input-placeholder {
+    padding: 7px;
+}
+
+.login1 {
+    background-color: var(--color-4);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login a {
+    text-decoration: none;
+    color: var(--color-5);
+}
+
+.kaydol {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.anasayfa {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--color-5);
+}
+
+.bi-book-fill {
+    position: absolute;
+    margin-left: 422.5px;
+    font-size: 100vh;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+/*login son*/
+/*register başlangıç*/
+.bodyregister {
+    position: relative;
+    background-color: var(--color-4);
+}
+
+.registerwrapper {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register {
+    height: 480px;
+    width: 400px;
+    background-color: var(--color-1);
+    border-radius: 4px;
+}
+
+.register h2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 25px;
+    background-color: var(--color-3);
+}
+
+.idregister {
+    display: grid;
+    margin-top: 35px;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.idregister input {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: var(--color-2);
+    text-justify: 13px;
+}
+
+.idregister .registertext5 input {
+    font-size: small;
+    position: absolute;
+    margin-left: -118px;
+    height: 15px;
+}
+
+.kanun {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    margin-left: 15px;
+}
+
+.kanun a {
+    text-decoration: none;
+    color: var(--color-5);
+    display: flex;
+    align-items: center;
+    display: table;
+}
+
+.registerbutton {
+    margin-top: 25px;
+    background-color: var(--color-4);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.girisyap {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    column-gap: 3px;
+}
+
+.girisyap a {
+    text-decoration: none;
+}
+
+.anasayfaregister {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.anasayfaregister a {
+    text-decoration: none;
+    color: var(--color-5);
+}

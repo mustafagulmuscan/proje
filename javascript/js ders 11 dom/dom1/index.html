@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1 class="title">HELLO WORLD!</h1>
+    <h1 class="title" id="title">HELLO WORLD!</h1>
+    <h1 class="title">HELLO WORLD!</h1>
+    <h1 class="title">HELLO WORLD!</h1>
+    <h1 class="title">HELLO WORLD!</h1> -->
+    <ul class="list">
+        <li class="list-items">mustafa</li>
+        <li class="list-items">ali</li>
+        <li class="list-items">ayşe</li>
+        <li class="list-items">emine</li>
+        <li class="list-items">alp</li>
+    </ul>
+    <script>
+        // const title=document.querySelector(".title").style.color="red";queryseleector işlk gördüğünü seçer
+        // document.querySelector("h1").style.color = "red";
+        // document.querySelector("h1:last-child(2)").style.color = "red";
+        // const title = document.getElementById("title").style.color = "blue";getelementbyid id yi alır
+        // title.innerText="DOM";bu komut yeni yazı yazmamızı sağlar
+        //title.innerHTML="<button>click</button>"bu komutta buton eklememi sağladı
+        // const list=document.querySelector("ul");
+        // document.querySelector("li").style.color = "red";
+        // document.querySelector("li:last-child").style.color="pink";
+        // document.querySelector("li:nth-child(2)").style.color = "blue";
+        // document.querySelector("li:nth-child(3)").style.color = "purple";
+        // document.querySelector("li:nth-child(4)").style.color = "orange";
+        /*çoklu seçme*/
+        // const listitems=document.getElementsByClassName("list-items");
+        // const listitems=document.querySelectorAll(".list-items");
+        const listitems=document.getElementsByTagName("ul");
+        // for(let i=0;i<listitems.length;i++){
+        //     listitems[i].style.color="blue";
+        // }
+        for(let list of listitems){
+            list.style.color="orange"
+        }
+    </script>
+</body>
+
+</html>

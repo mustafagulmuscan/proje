@@ -1,0 +1,1 @@
+let tarih=new Date;

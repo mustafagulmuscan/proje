@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        @media (max-width: 760px) {
+            body {
+                background-color: turquoise;
+            }
+        }
+
+        @media (max-width:600px) and (min-width:400px) {
+            body {
+                background-color: red;
+            }
+        }
+        h1{
+            display: none;
+        }
+
+        @media (min-width:1201px) {
+            .large {
+                display: block;
+            }
+        }
+        @media (max-width:1200px) and (min-width:1025px){
+            .desktop{
+                display: block;
+            }
+        }
+        @media (max-width:1024px) and (min-width:769px){
+            .laptops{
+                display: block;
+            }
+        }
+        @media (max-width:768px) and (min-width:481px){
+            .tablet{
+                display: block;
+            }
+        }
+        @media (max-width:480px) and (min-width:320px){
+            .mobile{
+                display: block;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="mobile">mobile</h1>
+    <h1 class="tablet">tablet</h1>
+    <h1 class="laptops">laptops</h1>
+    <h1 class="desktop">desktop</h1>
+    <h1 class="large">lagre screen</h1>
+</body>
+
+</html>
